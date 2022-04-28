@@ -1,507 +1,549 @@
 /*Reset do CSS */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    background-image: url(../imagens/fundo%20body.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: "Montserrat", Arial, sans-serif;
+  background-image: url(../img/body-background.jpg);
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 /* CLASSES GLOBAIS */
 .container {
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-    text-align: center;
+  width: 1500px;
+  height: inherit;
+
+  background-color: aqua;
 }
 
 /*Cores RGB*/
 .bg-gradient {
-    background: linear-gradient(to right, #D3860D, #794C05);
+  background: linear-gradient(to right, #d3860d, #794c05);
 }
 
 .centerObject {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 22px;
-    line-height: 1.5;
-    letter-spacing: 0.0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: justify;
-    word-spacing: 0.6px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: justify;
+  word-spacing: 0.6px;
 }
 
 h1,
 h2 {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 28px;
-    color: #000;
-    width: 100%;
-    height: 50px;
-    padding-top: 8px;
-    padding-left: 25px;
-    letter-spacing: 1.5px;
-    text-align: left;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 28px;
+  color: #000;
+  width: 100%;
+  height: 50px;
+  padding-top: 8px;
+  padding-left: 25px;
+  letter-spacing: 1.5px;
+  text-align: left;
 }
 
 h2 {
-    text-align: center;
+  font-size: 2px;
+  text-align: center;
 }
 
 .alturaAutomatica {
-    height: auto;
-    overflow: hidden;
+  height: auto;
+  overflow: hidden;
 }
 
-a:link, a:visited, a:active {
-    text-decoration: none;
-    color: #fff;
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*SEÇÃO DO HEADER PARA TODAS AS PÁGINAS*/
 #header {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    border-bottom: 4px solid;
-    border-color: #000;
-    background-color: #DD090D;
-    z-index: 999;
-    clear: both;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  border-bottom: 4px solid;
+  border-color: #000;
+  background-color: #dd090d;
+  z-index: 999;
+  clear: both;
 }
 
 #logo {
-    width: 95px;
-    min-height: 30px;
-    margin-left: 3%;
-    margin-top: 0.5%;
-    background-image: url(../imagens/logo.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    float: left;
+  width: 95px;
+  min-height: 30px;
+  margin-left: 15px;
+  margin-top: 0.5%;
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  float: left;
+}
+
+#menu-mobile {
+  display: none;
 }
 
 .menuContentor {
-    width: 50%;
-    height: 50px;
-    padding-left: 35%;
-    float: right;
+  width: 50%;
+  height: 50px;
+  padding-left: 35%;
+  float: right;
 }
 
 .menuContentor ul {
-    list-style: none;
-    position: relative;
+  list-style: none;
+  position: relative;
 }
 
 .menuContentor ul li {
-    width: 13em;
-    float: left;
+  width: 13em;
+  float: left;
 }
 
 .menuContentor a {
-    padding: 14px;
-    display: block;
-    text-align: center;
-    font-size: 14.5px;
+  padding: 14px;
+  display: block;
+  text-align: center;
+  font-size: 14.5px;
+}
+
+.icon-angle-menu {
+  font-size: 15px;
+  background-color: blueviolet;
 }
 
 .menuContentor ul ul {
-    position: absolute;
-    visibility: hidden;
+  position: absolute;
+  visibility: hidden;
 }
 
 .menuContentor ul li:hover ul {
-    visibility: visible;
+  visibility: visible;
 }
 
 .menuContentor ul ul li {
-    float: none;
-    border-bottom: 1px solid;
-    border-color: #fff;
+  float: none;
+  border-bottom: 1px solid;
+  border-color: #fff;
 }
 
 .menuContentor ul ul li a {
-    background-color: #f00;
+  background-color: #f00;
 }
 
 /*Seção Banner*/
 #bannerEsquerdo {
-    width: 76%;
-    min-height: 85em;
-    float: left;
-    background-image: url(../imagens/fundo%20esquerdo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0px 25px 15px;
+  width: 76%;
+  min-height: 85em;
+  float: left;
+  background-image: url(../img/fundo%20esquerdo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 25px 15px;
 }
 
 #containerDecoration {
-    width: 100%;
-    height: 21em;
-    background-image: url(../imagens/cinta%20de%20video.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 21em;
+  background-image: url(../img/cinta%20de%20video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #bannerDireito {
-    width: 24%;
-    min-height: 85em;
-    border-bottom: #000;
-    float: left;
-    background-image: url(../imagens/bannerDireito.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 25px 15px;
+  width: 24%;
+  min-height: 85em;
+  border-bottom: #000;
+  float: left;
+  background-image: url(../img/bannerDireito.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 25px 15px;
 }
 
 .imagemFundo {
-    width: 100%;
-    min-height: 58em;
-    background-image: url(../imagens/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  min-height: 58em;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #imagemBul {
-    width: 9em;
-    min-height: 12em;
-    margin-bottom: 31em;
+  width: 9em;
+  min-height: 12em;
+  margin-bottom: 31em;
 }
 
 .imagemMario {
-    width: 45em;
-    height: 40em;
-    margin-top: 3em;
-    margin-left: 6em;
+  width: 45em;
+  height: 40em;
+  margin-top: 3em;
+  margin-left: 6em;
 }
 
 .imagemOdyssey {
-    width: 40em;
-    height: 23em;
-    margin-left: 28em;
-    margin-top: -12.5em;
+  width: 40em;
+  height: 23em;
+  margin-left: 28em;
+  margin-top: -12.5em;
 }
 
 /*Seção Site Index Oficial*/
 #secao {
-    width: 100%;
-    height: 8em;
-    border-bottom: 4px solid;
-    border-color: #1C1B1B;
+  width: 100%;
+  height: 8em;
+  border-bottom: 4px solid;
+  border-color: #1c1b1b;
 }
 
 #textoOficialIndex {
-    width: 77.4%;
-    height: 5.4em;
-    margin-top: 2.3em;
-    float: left;
+  width: 77.4%;
+  height: 5.4em;
+  margin-top: 2.3em;
+  float: left;
 }
 
 #textoOficialIndex h1 {
-    padding-top: 1.3em;
-    font-size: 19px;
-    font-weight: 800;
-    text-align: left;
-    margin-left: 3.3em;
-    padding-top: 5.8%;
-    color: #D31A1D;
+  padding-top: 1.3em;
+  font-size: 19px;
+  font-weight: 800;
+  text-align: left;
+  margin-left: 3.3em;
+  padding-top: 5.8%;
+  color: #d31a1d;
 }
 
 #textoOficialIndex p {
-    padding-top: 1.2em;
-    margin-left: 5em;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: left;
+  padding-top: 1.2em;
+  margin-left: 5em;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
 }
 
 .imagemBolaDeFogo {
-    width: 3.3em;
-    height: 3.3em;
-    position: absolute;
-    top: 5.3em;
-    left: 77.9%;
+  width: 3.3em;
+  height: 3.3em;
+  position: absolute;
+  top: 5.3em;
+  left: 77.9%;
 }
 
 #imagemSwitch {
-    width: 86.3px;
-    height: 5.4em;
-    position: absolute;
-    margin-top: 3.1em;
+  width: 86.3px;
+  height: 5.4em;
+  position: absolute;
+  margin-top: 3.1em;
 }
 
 .informations {
-    width: 100%;
-    height: 10em;
+  width: 100%;
+  height: 10em;
 }
 
 .Interborder {
-    width: 15%;
-    height: 10em;
-    padding-top: 3%;
-    padding-left: 2%;
-    writing-mode: vertical-lr;
-    float: left;
+  width: 15%;
+  height: 9em;
+  padding-top: 3%;
+  padding-left: 2%;
+  writing-mode: vertical-lr;
+  float: left;
 }
 
 .Interborder:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: blueviolet;
+  cursor: pointer;
+  color: #fff;
+  background-color: #e95c49;
 }
 
 .Interborder h2 {
-    font-size: 1.2em;
-    font-weight: 100;
-    color: #D31A1D;
+  font-size: 1.2em;
+  font-weight: 100;
+  color: #d31a1d;
 }
 
 .sobreInformations {
-    width: 62%;
-    height: 8em;
-    float: left;
-    margin-top: 3.5%;
-    border-left: 5px solid;
-    border-left-color: #D31A1D;
+  width: 62%;
+  height: 8em;
+  float: left;
+  margin-top: 3.5%;
+  border-left: 5px solid;
+  border-left-color: #d31a1d;
 }
 
 .sobreInformations p {
-    padding: 1% 4%;
-    font-weight: 700;
-    word-spacing: 0px;
-    font-size: 0.9em;
-    text-align: left;
+  padding: 1% 4%;
+  font-weight: 700;
+  word-spacing: 0px;
+  font-size: 0.9em;
+  text-align: left;
 }
 
 .sobreInformations h1 {
-    padding: 2% 4%;
-    font-weight: 800;
-    font-size: 19.4px;
-    text-align: left;
+  padding: 2% 4%;
+  font-weight: 800;
+  font-size: 19.4px;
+  text-align: left;
 }
 
 .positionImagem {
-    width: 23%;
-    height: 10em;
-    float: left;
+  width: 23%;
+  height: 10em;
+  float: left;
 }
 
 .positonDiritoImagem {
-    width: 90%;
-    height: 8em;
-    margin-top: 13%;
+  width: 90%;
+  height: 8em;
+  margin-top: 13%;
 }
 
 /*Seção Detalhes*/
 #instagram {
-    width: 100%;
-    height: 15em;
-    margin-top: 5%;
-    padding-top: 8%;
-    border-top: 5px solid;
-    border-color: #A3A469;
+  width: 100%;
+  height: 15em;
+  margin-top: 5%;
+  padding-top: 8%;
+  border-top: 5px solid;
+  border-color: #a3a469;
 }
 
 #imagemInstagram {
-    width: 15%;
-    height: 3.3em;
-    margin-left: 5%;
-    margin-top: 2%;
-    float: left;
+  width: 15%;
+  height: 3.3em;
+  margin-left: 5%;
+  margin-top: 2%;
+  float: left;
 }
 
 #instagram h1 {
-    width: 80%;
-    height: 3.3em;
-    padding: 2% 3%;
-    font-size: 33px;
-    color: #023BC1;
-    float: left;
+  width: 80%;
+  height: 3.3em;
+  padding: 2% 3%;
+  font-size: 33px;
+  color: #023bc1;
+  float: left;
 }
 
 #instagram a {
-    font-weight: 600;
-    font-size: 1.1em;
-    margin-left: 5%;
-    color: #D31A1D;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-left: 5%;
+  color: #d31a1d;
 }
 
 #instagram a:hover {
-    cursor: pointer;
-    color: #000;
+  cursor: pointer;
+  color: #000;
 }
 
 #containerProtudos {
-    width: 100%;
-    height: 40em;
-    clear: both;
+  width: 100%;
+  height: 40em;
+  clear: both;
 }
 
 .protudo {
-    width: 31.3%;
-    height: 25em;
-    margin-top: 10%;
-    padding: 1% 1%;
-    box-shadow: 30px 30px 30px;
-    margin-left: 1%;
-    margin-right: 1%;
-    float: left;
-    background-color: #fff;
+  width: 31.3%;
+  height: 25em;
+  margin-top: 10%;
+  padding: 1% 1%;
+  box-shadow: 30px 30px 30px;
+  margin-left: 1%;
+  margin-right: 1%;
+  float: left;
+  background-color: #fff;
 }
 
 .imagemProtudo {
-    width: 100%;
-    height: 15em;
-    border: 1.5px solid;
-    border-color: #1c1c1c;
+  width: 100%;
+  height: 15em;
+  border: 1.5px solid;
+  border-color: #1c1c1c;
 }
 
 .protudoTexto {
-    width: 100%;
-    height: 7.4em;
+  width: 100%;
+  height: 7.4em;
 }
 
 .protudoTexto h2 {
-    width: 100%;
-    height: 1.3em;
-    font-size: 1.6em;
-    padding: 1% 1%;
-    text-align: left;
+  width: 100%;
+  height: 1.3em;
+  font-size: 1.6em;
+  padding: 1% 1%;
+  text-align: left;
 }
 
 .protudoTexto p {
-    width: 100%;
-    height: 5.5em;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 1% 1%;
-    text-align: left;
-    color: #343433;
+  width: 100%;
+  height: 5.5em;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 1% 1%;
+  text-align: left;
+  color: #343433;
 }
 
 /*Seção Cadastro*/
 #cadastro {
-    width: 100%;
-    height: 30em;
-    margin-top: 2%;
-    border-top: 10px solid #999;
-    border-top-style: dotted;
-    background-image: url(../imagens/fundo%20esquerdo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 30em;
+  margin-top: 2%;
+  border-top: 10px solid #999;
+  border-top-style: dotted;
+  background-image: url(../img/fundo%20esquerdo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #cadastro form {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 #cadastro input {
-    width: 60%;
-    height: 5.2em;
-    font-size: 1em;
-    margin-left: 8%;
-    margin-right: 2%;
-    border-radius: 8px;
-    border: 1px solid #130400;
-    padding: 1%;
-
+  width: 60%;
+  height: 5.2em;
+  font-size: 1em;
+  margin-left: 8%;
+  margin-right: 2%;
+  border-radius: 8px;
+  border: 1px solid #130400;
+  padding: 1%;
 }
 
 #cadastro button {
-    width: 20%;
-    border-radius: 8px;
-    color: #130400;
-    padding: 2%;
-    cursor: pointer;
+  width: 20%;
+  border-radius: 8px;
+  color: #130400;
+  padding: 2%;
+  cursor: pointer;
 }
 
 #imagemCadastro {
-    width: 22%;
-    height: 14em;
-    position: relative;
-    top: -125px;
-    z-index: 2;
+  width: 22%;
+  height: 14em;
+  position: relative;
+  top: -125px;
+  z-index: 2;
 }
 
 .cadastroTexto {
-    width: 100%;
-    height: 25em;
-    margin-top: -185px;
+  width: 100%;
+  height: 25em;
+  margin-top: -185px;
 }
 
 .cadastroTexto h2 {
-    height: 2em;
-    color: #fff;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 700;
+  height: 2em;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .cadastroTexto h3 {
-    height: 2em;
-    font-size: 1.5em;
-    color: #fff;
-    text-align: center;
+  height: 2em;
+  font-size: 1.5em;
+  color: #fff;
+  text-align: center;
 }
 
 #dinheiroImagem {
-    position: absolute;
-    top: 284%;
-    left: 84%;
+  position: absolute;
+  top: 284%;
+  left: 84%;
 }
 
 /*Seção Rodapé*/
 #social-icons a {
-    font-size: 1.5em;
-    color: rgba(255, 255, 255, 0.7);
-    margin-right: 3%;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-right: 3%;
 }
 
 #social-icons a:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 #social-icons a:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 #copyright {
-    margin-top: 2%;
-    color: rgba(255, 255, 255, 0.7);
-    text-align: center;
+  margin-top: 2%;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
 }
 
 /*Seção Botão Inicio*/
 #btnTop {
-    width: 55px;
-    height: 70px;
-    display: none;
-    background-image: url(../imagens/Menu%20topo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    z-index: 5;
-    bottom: 0;
-    right: 20px;
-    margin-bottom: 1%;
+  width: 55px;
+  height: 70px;
+  display: none;
+  background-image: url(../img/Menu%20topo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  right: 20px;
+  margin-bottom: 1%;
 }
 
 #btnTop:hover {
-    cursor: pointer;
-    background-position: 0 80px;
+  cursor: pointer;
+  background-position: 0 80px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 699px) {
+  .container {
+    width: 98vw;
+    height: inherit;
+  }
+
+  #logo {
+    width: 160px;
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+
+    background-color: #1c1c1c;
+  }
+
+  .menuContentor {
+    display: none;
+  }
+
+  #menu-mobile {
+    display: block;
+    float: right;
+    padding-left: 3%;
+    margin-right: 0;
+
+    background-color: #794c05;
+  }
 }

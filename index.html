@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projeto CSS - Matheus Henrique</title>
+    <title>Super Mario Odyssey for Matheus Henrique</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="imagens/intro.png">
+    <link rel="icon" href="img/intro.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 </head>
 
 <body>
     <!-- Seção do Cabeçalho e do Menu  -->
-    <div id="header">
-        <div class="conteudo">
+    <header id="header">
+        <div class="container centerObject">
             <div id="logo">
-
             </div>
             <nav class="menuContentor">
                 <ul>
-                    <li><a href="#bannerEsquerdo"><b>MENU ></b></a>
+                    <li><a href="#bannerEsquerdo"><b>MENU</b><i class="uil uil-angle-right-b icon-angle-menu"></i></a>
                         <ul>
                             <li><a href="#containerProtudos">Diversão - Mario Odyssey</a></li>
                             <li><a href="#instagram">Me siga no Instagram</a></li>
@@ -33,14 +34,22 @@
                     </li>
                 </ul>
             </nav>
+
+            <nav id="menu-mobile">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                  <rect width="100" height="20"></rect>
+                  <rect y="30" width="100" height="20"></rect>
+                  <rect y="60" width="100" height="20"></rect>
+                </svg>
+              </nav>
         </div>
-    </div>
-    <!--Seção Banner-->
+    </header>
+    Seção Banner
     <div id="bannerEsquerdo">
         <div class="imagemFundo">
-            <img src="imagens/Bul.png" alt="bulsola" id="imagemBul">
-            <img src="imagens/mario.png" alt="Super Mario" class="imagemMario">
-            <img src="imagens/odyssey.png" alt="Escrita Super mario Odyssey" class="imagemOdyssey">
+            <img src="img/compass.png" alt="bulsola" id="imagemBul">
+            <img src="img/mario.png" alt="Super Mario" class="imagemMario">
+            <img src="img/odyssey.png" alt="Escrita Super mario Odyssey" class="imagemOdyssey">
         </div>
         <div id="containerDecoration">
 
@@ -50,11 +59,11 @@
     <div id="bannerDireito">
         <div id="secao">
             <div id="textoOficialIndex">
-                <img src="imagens/bola%20de%20fogo.png" alt="" class="imagemBolaDeFogo">
+                <img src="img/bola%20de%20fogo.png" alt="" class="imagemBolaDeFogo">
                 <h1>SUPER MARIO ODYSSEY</h1>
                 <p>OFFICIAL SITE INDEX</p>
             </div>
-            <img src="imagens/switch.png" alt="" id="imagemSwitch">
+            <img src="img/switch.png" alt="Imagem Nitendo Switch" id="imagemSwitch">
         </div>
         <div class="informations">
             <div class="Interborder">
@@ -67,7 +76,7 @@
                 <h1>Princesa Peach e Bowser vão se casar ?!</h1>
             </div>
             <div class="positionImagem">
-                <img src="imagens/casa.jpg" class="positonDiritoImagem">
+                <img src="img/casa.jpg" class="positonDiritoImagem">
             </div>
         </div>
         <div class="informations">
@@ -81,7 +90,7 @@
                 <h1>Tiremos o chapéu para o novo amigo de Mario!</h1>
             </div>
             <div class="positionImagem">
-                <img src="imagens/tire%20o%20chapeu.jpg" class="positonDiritoImagem">
+                <img src="img/tire%20o%20chapeu.jpg" class="positonDiritoImagem">
             </div>
         </div>
         <div class="informations">
@@ -95,7 +104,7 @@
                 <h1>Há algo para todos! A viagem de uma vida</h1>
             </div>
             <div class="positionImagem">
-                <img src="imagens/aventura.jpg" class="positonDiritoImagem">
+                <img src="img/aventura.jpg" class="positonDiritoImagem">
             </div>
         </div>
         <div class="informations">
@@ -109,12 +118,12 @@
                 <h1>O seu guia Odyssey</h1>
             </div>
             <div class="positionImagem">
-                <img src="imagens/mundoGuia.jpg" class="positonDiritoImagem">
+                <img src="img/worldGuide.jpg" class="positonDiritoImagem">
             </div>
         </div>
         <!--Seção Detalhe-->
         <div id="instagram">
-            <img src="imagens/instagram.png" id="imagemInstagram">
+            <img src="img/instagram.png" id="imagemInstagram">
             <h1>MATHEUS HENRIQUE.OFC</h1>
             <a href="https://www.instagram.com/math_henrique.ofc/" target="_blank">instagram.com/math_henrique.ofc</a>
         </div>
@@ -122,7 +131,7 @@
     <!--Seção Protudos-->
     <div id="containerProtudos">
         <div class="protudo">
-            <img src="imagens/aventura.jpg" class="imagemProtudo">
+            <img src="img/aventura.jpg" class="imagemProtudo">
             <div class="protudoTexto">
                 <h2>Super Mario Bros</h2>
                 <p>Foi lançado em 1985. O personagem que une a todos. Crianças, jovens, adultos, idosos… Todos se
@@ -130,7 +139,7 @@
             </div>
         </div>
         <div class="protudo">
-            <img src="imagens/diversao.jpg" class="imagemProtudo">
+            <img src="img/diversao.jpg" class="imagemProtudo">
             <div class="protudoTexto">
                 <h2>Diversão, diversão, diversão!</h2>
                 <p>É basicamente Mario 64 outra vez, e é por isso que Super Mario Odyssey tem tanto glamour e charme. É
@@ -138,7 +147,7 @@
             </div>
         </div>
         <div class="protudo">
-            <img src="imagens/mario%20Odyssey.jpg" class="imagemProtudo">
+            <img src="img/mario%20Odyssey.jpg" class="imagemProtudo">
             <div class="protudoTexto">
                 <h2>Super Mario Odyssey</h2>
                 <p>muda completamente a forma de jogar “Mario” e nos coloca em um ambiente mais aberto, sem fases
@@ -149,16 +158,16 @@
 
     <!--Seção Cadastro-->
     <div id="cadastro">
-        <img src="imagens/odyssey.png" id="imagemCadastro">
+        <img src="img/odyssey.png" id="imagemCadastro">
         <div class="cadastroTexto">
             <h2>Inscreva-se agora!</h2>
             <h3>Receba novidades, dicas e muito mais</h3>
-            <img src="imagens/dinheiro.png" id="dinheiroImagem">
+            <img src="img/dinheiro.png" id="dinheiroImagem">
             <form>
                 <input type="email" name="email" placeholder="Digite seu melhor E-mail">
                 <button>Cadastrar</button>
             </form>
-            <img src="imagens/Bul.png">
+            <img src="img/compass.png">
         </div>
     </div>
 
