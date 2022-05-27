@@ -502,7 +502,7 @@ h4 {
   margin-top: 2%;
   border-top: 10px solid #999;
   border-top-style: dotted;
-  background-image: url(../img/fundo%20esquerdo.jpg);
+  background-image: url(../img/newsletter-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -542,6 +542,8 @@ h4 {
   width: 100%;
   height: 25em;
   margin-top: -185px;
+
+  background-color: #023bc1;
 }
 
 .cadastroTexto h2 {
