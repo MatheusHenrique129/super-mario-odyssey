@@ -26,8 +26,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-
-/*===============Scroll Up Show ===============*/
+/*=============== Scroll Up Show ===============*/
 function scroll() {
   const scrollUp = document.getElementById("scroll-up");
 
@@ -38,4 +37,6 @@ function scroll() {
 function scrollUp() {
   document.documentElement.scrollTop = 0;
 }
-window.onscroll = function() {scroll()}
+window.onscroll = function () {
+  scroll();
+};
